@@ -1,0 +1,188 @@
+/* ============================================================
+   App.css - Global Styles for Travel Booking App
+   Uses Poppins font and custom travel-themed colors
+   ============================================================ */
+
+/* Apply Poppins font to the entire app */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* ── Hero Section ─────────────────────────────────────────── */
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* ── Navbar ───────────────────────────────────────────────── */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white !important;
+}
+
+/* ── Cards ────────────────────────────────────────────────── */
+.destination-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ── Slider ───────────────────────────────────────────────── */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.btn-primary {
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0b5ed7, #0bb5d1);
+  transform: scale(1.03);
+}
+
+/* ── Footer ───────────────────────────────────────────────── */
+.footer {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #ccc;
+  padding: 40px 0 20px;
+}
+
+.footer h5 {
+  color: white;
+  font-weight: 600;
+}
+
+/* ── Section Titles ───────────────────────────────────────── */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d6efd;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ── Chatbot ──────────────────────────────────────────────── */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chatbot-box {
+  width: 320px;
+  max-height: 420px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+}
+
+.chatbot-header {
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  color: white;
+  padding: 12px 15px;
+  font-weight: 600;
+}
+
+.chatbot-messages {
+  height: 250px;
+  overflow-y: auto;
+  padding: 12px;
+  background: #f8f9fa;
+}
+
+.chatbot-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 20px rgba(13, 110, 253, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Admin Dashboard ──────────────────────────────────────── */
+.admin-stat-card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ── Table ────────────────────────────────────────────────── */
+.table-responsive {
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* ── Auth Forms ───────────────────────────────────────────── */
+.auth-card {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Page Wrapper ─────────────────────────────────────────── */
+.page-wrapper {
+  min-height: 80vh;
+  padding: 40px 0;
+}
